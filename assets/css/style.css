@@ -65,10 +65,24 @@ p.description {
   box-sizing: border-box;
 }
 
-.article-search input {
+.search-wrapper {
+  position: relative;
   width: 100%;
-  text-align: start;
-  padding: 14px 20px;
+}
+
+.search-wrapper .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+  pointer-events: none;
+}
+
+.search-wrapper input {
+  width: 100%;
+  padding: 14px 14px 14px 42px;
   border-radius: 10px;
   border: 1px solid #444;
   font-size: 16px;
@@ -78,15 +92,28 @@ p.description {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.article-search input::placeholder {
+.search-wrapper input::placeholder {
   color: #888;
 }
 
-.article-search input:focus {
+.search-wrapper input:focus {
   outline: none;
   border-color: #666;
   background-color: #2a2a2a;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+/* ? responsive menu search */
+@media (max-width: 480px) {
+  .search-wrapper input {
+    font-size: 14px;
+    padding: 12px 12px 12px 40px;
+  }
+
+  .search-wrapper .search-icon {
+    font-size: 18px;
+    left: 12px;
+  }
 }
 
 /* ? article end */
@@ -128,9 +155,9 @@ ul.nav-links {
 .nav-links a {
   text-decoration: none;
   color: var(--font-color);
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .nav-links a:hover {
@@ -992,6 +1019,7 @@ h1.text-center {
   padding: 2rem 20px;
   text-align: center;
   font-weight: 600;
+  margin-top: 30px;
 }
 
 .footer-container {
@@ -1030,7 +1058,7 @@ h1.text-center {
 
 .contact-section p,
 .address-section p {
-  margin: 0.3rem 0;
+  margin: 20px 0;
   color: #8d8d8d;
   font-size: 0.9rem;
   font-weight: 600;
@@ -1074,6 +1102,145 @@ hr {
   letter-spacing: 2px;
 }
 
+/* ? menu about */
+/* Section 1: JT DIGITALLY */
+.box-container {
+  background-color: var(--bg-2-color);
+  padding: 40px 20px;
+  margin-top: 120px;
+}
+.about-hero-section {
+  max-width: 1200px;
+  padding: 30px 20px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 3.9rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  max-width: 550px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+/* Section 2: Business Content with Background */
+.business-section {
+  position: relative;
+  background-image: url("../img/about/about.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.business-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.business-content {
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.business-content .highlight {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.box-vimis {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.kosong {
+  background-color: #888;
+  width: 50px;
+  height: 3px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.mission,
+.vision {
+  max-width: 600px;
+}
+
+.mission h1,
+.vision h1 {
+  text-transform: uppercase;
+  margin: 20px 0 20px;
+  color: var(--font-color);
+}
+
+.mission p,
+.vision p {
+  color: #888;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 769px) {
+  .business-content {
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    z-index: 2;
+  }
+
+  .business-content p.highlight {
+    font-size: 1rem;
+    color: #a5a5a5;
+  }
+
+  .business-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .business-section .overlay {
+    background: transparent;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -1086,6 +1253,34 @@ hr {
 
   .social-icons {
     justify-content: center;
+  }
+
+  .business-content {
+    font-size: 1.2rem;
+  }
+
+  .business-content p.highlight {
+    font-size: 1rem;
+    color: #a5a5a5;
+  }
+
+  .about-hero-section {
+    padding: 30px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    max-width: 550px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--font-color);
+  }
+
+  .box-vimis {
+    flex-direction: column;
   }
 }
 
@@ -1298,7 +1493,7 @@ hr {
 
   .footer-col p {
     line-height: 20px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -1317,12 +1512,10 @@ hr {
     height: 250px;
   }
 
-  .article-search {
-    margin-top: 20px;
-  }
-
-  .article-search input {
-    font-size: 15px;
-    padding: 12px 16px;
+  .footer-bottom {
+    font-size: 0.7rem;
+    color: #888;
+    margin-top: 0.5rem;
+    letter-spacing: 2px;
   }
 }
