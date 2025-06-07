@@ -972,6 +972,7 @@ h1.text-center {
   background-color: #121212;
   text-align: center;
   padding: 50px 20px;
+  overflow: hidden;
 }
 
 .text-brand {
