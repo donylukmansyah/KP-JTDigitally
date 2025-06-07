@@ -7,6 +7,44 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Cek URL aktif saat ini
+const currentPage = window.location.pathname.split("/").pop(); // ambil nama file terakhir
+
+const menuItems = document.querySelectorAll(".menu-center ul li");
+
+menuItems.forEach((item) => {
+  const link = item.querySelector("a");
+  const href = link.getAttribute("href");
+
+  // Jika href sama dengan halaman saat ini, beri class active
+  if (href === currentPage || (currentPage === "" && href === "index.html")) {
+    item.classList.add("active");
+  } else {
+    item.classList.remove("active");
+  }
+});
+
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+  searchInput.addEventListener("keyup", function () {
+    const keyword = this.value.toLowerCase();
+    const articles = document.querySelectorAll(".article-card");
+
+    articles.forEach((article) => {
+      const title = article.querySelector("a").textContent.toLowerCase();
+      const content = article.querySelector("p").textContent.toLowerCase();
+
+      if (title.includes(keyword) || content.includes(keyword)) {
+        article.style.display = "block";
+      } else {
+        article.style.display = "none";
+      }
+    });
+  });
+}
+
+
 const hamburger = document.getElementById("hamburger");
 const menuClose = document.getElementById("menuClose");
 const slideMenu = document.getElementById("slideMenu");

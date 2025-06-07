@@ -21,7 +21,6 @@
 body {
   background-color: var(--bg-1-color);
   color: var(--font-color);
-  height: 2000px;
 }
 
 /* ? article css */
@@ -38,6 +37,14 @@ body {
   margin: 0 auto;
 }
 
+.section-title-text.article p {
+  font-size: 1rem;
+}
+
+.section-title-text.article h2 {
+  font-size: 2.8rem;
+}
+
 p.description {
   display: flex;
   flex-direction: column;
@@ -48,6 +55,38 @@ p.description {
   padding-left: 15px;
   max-width: 900px;
   margin: auto;
+}
+
+.article-search {
+  width: 100%;
+  max-width: 720px;
+  margin: 40px auto 20px auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.article-search input {
+  width: 100%;
+  text-align: start;
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  font-size: 16px;
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.article-search input::placeholder {
+  color: #888;
+}
+
+.article-search input:focus {
+  outline: none;
+  border-color: #666;
+  background-color: #2a2a2a;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
 /* ? article end */
@@ -739,12 +778,12 @@ p.section-description {
   text-align: left;
   padding: 60px 20px 0 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .section-title-text p {
-  font-size: 1.1rem;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  letter-spacing: 3px;
   font-weight: bold;
   color: var(--font-color);
 }
@@ -814,7 +853,7 @@ p.section-description {
 .button {
   text-align: center;
   padding: 20px 0;
-  margin-top: 10px;
+  margin: 20px 0;
 }
 
 a.btn {
@@ -822,7 +861,7 @@ a.btn {
   font-size: 0.8rem;
   text-decoration: none;
   color: var(--font-color);
-  padding: 10px 20px;
+  padding: 15px 30px;
   font-weight: bold;
   border: 2px solid var(--font-color);
   border-radius: 50px;
@@ -950,7 +989,7 @@ h1.text-center {
 .footer {
   background-color: #090909;
   color: #8d8d8d;
-  padding: 2rem;
+  padding: 2rem 20px;
   text-align: center;
   font-weight: 600;
 }
@@ -982,6 +1021,11 @@ h1.text-center {
   border-bottom: 2px solid #fff;
   display: inline-block;
   padding-bottom: 2px;
+}
+
+.contact-section p strong,
+.address-section p strong {
+  color: var(--font-color);
 }
 
 .contact-section p,
@@ -1122,15 +1166,23 @@ hr {
   }
 
   .section-title-text.article p {
-    font-size: .8rem;
+    font-size: 0.7rem;
   }
 
   .section-title-text.article h2 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
   p.description {
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+
+  .section-title-text p {
+    font-size: 0.7rem;
+  }
+
+  .section-title-text h2 {
+    font-size: 2.3rem;
   }
 }
 
@@ -1192,6 +1244,10 @@ hr {
     padding: 20px;
   }
 
+  .hero-section {
+    padding: 80px 20px;
+  }
+
   .swiper {
     margin: 0 auto;
   }
@@ -1201,9 +1257,8 @@ hr {
   }
 
   .article-content {
-    top: auto;
-    bottom: 0;
-    right: 8px;
+    top: 140px;
+    right: 6px;
     width: 96%;
     padding: 20px;
   }
@@ -1228,6 +1283,23 @@ hr {
   .section-title-text {
     padding: 0 20px;
   }
+
+  .section-title-text p {
+    font-size: 0.7rem;
+  }
+
+  .section-title-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq-title {
+    font-size: 2.5rem;
+  }
+
+  .footer-col p {
+    line-height: 20px;
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 428px) {
@@ -1243,5 +1315,14 @@ hr {
 
   .responsive-map {
     height: 250px;
+  }
+
+  .article-search {
+    margin-top: 20px;
+  }
+
+  .article-search input {
+    font-size: 15px;
+    padding: 12px 16px;
   }
 }
