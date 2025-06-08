@@ -928,6 +928,21 @@ h1.text-center {
   margin: 0 auto;
 }
 
+.no-result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.no-result p {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin: 0;
+}
+
 .article-card {
   position: relative;
   overflow: hidden;
@@ -1202,6 +1217,60 @@ hr {
   font-weight: 500;
 }
 
+/* ? pages */
+.container-article {
+  padding: 0 10px;
+  color: var(--bg-1-color);
+}
+
+.box-article {
+  margin: 130px auto 20px;
+  max-width: 1200px;
+  background-color: var(--font-color);
+  padding: 50px;
+}
+
+.article-img {
+  width: 100%;
+}
+
+.article-img img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.desc-article h4 {
+  margin: 30px 0;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+.desc-article p {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+/* ? pages end */
+
+/* ? previous menu */
+.previous {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.previous a {
+  text-decoration: none;
+  color: var(--font-color);
+  text-transform: capitalize;
+}
+/* ? previous end */
+
 @media (min-width: 769px) {
   .business-content {
     position: absolute;
@@ -1282,6 +1351,24 @@ hr {
 
   .box-vimis {
     flex-direction: column;
+  }
+
+  .box-article {
+    margin: 100px auto 20px;
+    padding: 25px;
+  }
+
+  .desc-article h4 {
+    font-size: 1.5rem;
+  }
+
+  .desc-article p {
+    font-size: .8rem;
+    margin: 20px 0;
+  }
+
+  .previous a {
+    font-size: .8rem;
   }
 }
 

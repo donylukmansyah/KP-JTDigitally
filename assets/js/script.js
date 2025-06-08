@@ -24,25 +24,76 @@ menuItems.forEach((item) => {
   }
 });
 
-const searchInput = document.getElementById("searchInput");
+// ? menu search
+async function fetchGalleryData() {
+  try {
+    const response = await fetch("assets/data/data-articles.json");
+    const data = await response.json();
+    tampilkanArtikel(data);
 
-if (searchInput) {
-  searchInput.addEventListener("keyup", function () {
-    const keyword = this.value.toLowerCase();
-    const articles = document.querySelectorAll(".article-card");
+    const searchInput = document.getElementById("searchInput");
+    if (searchInput) {
+      searchInput.addEventListener("keyup", function () {
+        const keyword = this.value.trim().toLowerCase();
+        const hasilFilter = data.filter(item =>
+          item.name.toLowerCase().includes(keyword) ||
+          item.desc.toLowerCase().includes(keyword)
+        );
+        tampilkanArtikel(hasilFilter);
+      });
+    }
+  } catch (error) {
+    console.error("Gagal memuat data JSON:", error);
+    const container = document.getElementById("articleSection");
+    container.innerHTML = "<p>Gagal memuat artikel. Silakan coba lagi nanti.</p>";
+  }
+}
 
-    articles.forEach((article) => {
-      const title = article.querySelector("a").textContent.toLowerCase();
-      const content = article.querySelector("p").textContent.toLowerCase();
+function tampilkanArtikel(data) {
+  const container = document.getElementById("articleSection");
+  container.innerHTML = "";
 
-      if (title.includes(keyword) || content.includes(keyword)) {
-        article.style.display = "block";
-      } else {
-        article.style.display = "none";
-      }
-    });
+  if (data.length === 0) {
+    container.innerHTML = `<div class="no-result"><p>Tidak ada artikel yang cocok.</p></div>`;
+    return;
+  }
+
+  data.forEach(item => {
+    const card = document.createElement("div");
+    card.classList.add("article-card");
+
+    const link = item.link; // langsung ambil dari JSON
+
+    card.innerHTML = `
+      <img src="${item.src}" alt="${item.name}">
+      <div class="article-content">
+        <a href="${link}">${item.name}</a>
+        <p>${item.desc}</p>
+      </div>
+    `;
+    container.appendChild(card);
   });
 }
+
+function getLink(namaArtikel) {
+  if (namaArtikel.includes("Layanan Desain Grafis")) {
+    return "pages/layanan-desain.html";
+  }
+  if (namaArtikel.includes("Jasa Pasang Iklan")) {
+    return "pages/pasang-iklan.html";
+  }
+  if (namaArtikel.includes("Jasa Branding Produk UMKM")) {
+    return "pages/branding-umkm.html";
+  }
+  return "#";
+}
+
+document.addEventListener("DOMContentLoaded", fetchGalleryData);
+
+
+
+
+// ? menu search end
 
 
 const hamburger = document.getElementById("hamburger");

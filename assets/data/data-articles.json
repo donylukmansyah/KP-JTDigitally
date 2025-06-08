@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "date": "2025-06-01",
+    "name": "Layanan Desain Grafis Di Jakarta Harga Pemula",
+    "src": "assets/img/article/Layanan-Desain-Grafis-Di-Jakarta.png.jpg",
+    "desc": "Layanan desain grafis di Jakarta – Siapa sih yang gak bisa desain menghasilkan ...",
+    "link": "pages/layanan-desain.html"
+  },
+  {
+    "id": 2,
+    "date": "2025-06-01",
+    "name": "Jasa Pasang Iklan Online Di Jakarta",
+    "src": "assets/img/article/Jasa-pasang-iklan-online-1024x576.png.jpg",
+    "desc": "Jasa pasang iklan online – Stres mikirin iklan yang tak kunjung mendapatkan rangking ..."
+  },
+  {
+    "id": 3,
+    "date": "2025-06-01",
+    "name": "Jasa Branding Produk UMKM Di Jakarta",
+    "src": "assets/img/article/Jasa-Branding-Produk-UMKM-1024x576.png.jpg",
+    "desc": "Jasa branding produk UMKM – Mengenalkan produk ke konsumen, hingga membuat para konsumen ..."
+  }
+]
