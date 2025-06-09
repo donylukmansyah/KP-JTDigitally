@@ -12,13 +12,137 @@
     "date": "2025-06-01",
     "name": "Jasa Pasang Iklan Online Di Jakarta",
     "src": "assets/img/article/Jasa-pasang-iklan-online-1024x576.png.jpg",
-    "desc": "Jasa pasang iklan online – Stres mikirin iklan yang tak kunjung mendapatkan rangking ..."
+    "desc": "Jasa pasang iklan online – Stres mikirin iklan yang tak kunjung mendapatkan rangking ...",
+    "link": "pages/jasa-pasang-iklan.html"
   },
   {
     "id": 3,
     "date": "2025-06-01",
     "name": "Jasa Branding Produk UMKM Di Jakarta",
     "src": "assets/img/article/Jasa-Branding-Produk-UMKM-1024x576.png.jpg",
-    "desc": "Jasa branding produk UMKM – Mengenalkan produk ke konsumen, hingga membuat para konsumen ..."
+    "desc": "Jasa branding produk UMKM – Mengenalkan produk ke konsumen, hingga membuat para konsumen ...",
+    "link": "pages/jasa-branding.html"
+  },
+  {
+    "id": 4,
+    "date": "2025-06-01",
+    "name": "Jasa Membuat Website Ecommerce Di Jakarta",
+    "src": "assets/img/article/Jasa-membuat-website-ecommerce.png.webp",
+    "desc": "Jasa membuat website ecommerce Hay, apakah kamu hari ini sibuk mencari ...",
+    "link": "pages/jasa-membuat-website.html"
+  },
+  {
+    "id": 5,
+    "date": "2025-06-01",
+    "name": "Strategi Memperluas Jangkauan Pasar Lewat Media Sosial",
+    "src": "assets/img/article/Strategi-Memperluas-Jangkauan-Pasar.png.webp",
+    "desc": "Strategi memperluas jangkauan pasar – Dunia pasar memang sangat sulit di tebak. Apalagi …",
+    "link": "pages/strategi-memperluas-jangkauan.html"
+  },
+  {
+    "id": 6,
+    "date": "2025-06-01",
+    "name": "Trik Memenangkan Persaingan Bisnis Tanpa Dukun",
+    "src": "assets/img/article/Trik-Memenangkan-Persaingan-Bisnis.png.webp",
+    "desc": "Trik memenangkan persaingan bisnis – Dalam berbisnis, pasti kita akan dihadapkan berbagai tantangan. …",
+    "link": "pages/trik-memenangkan-persaingan.html"
+  },
+  {
+    "id": 7,
+    "date": "2025-06-01",
+    "name": "Cara Mendapatkan Ide Konten Segar Dan Viral",
+    "src": "assets/img/article/Cara-mendapatkan-ide-konten-segar.png.webp",
+    "desc": "Cara mendapatkan ide konten segar – Pada awal pengelolaan media sosial pada bagian …"
+  },
+  {
+    "id": 8,
+    "date": "2025-06-01",
+    "name": "Strategi Meningkatkan Hubungan Dengan Pelanggan Baru",
+    "src": "assets/img/article/Strategi-Meningkatkan-Hubungan-Dengan-Pelanggan.png.webp",
+    "desc": "Strategi meningkatkan hubungan dengan pelanggan – Seseorang yang memiliki tanggung jawab meningkatkan hubungan …"
+  },
+  {
+    "id": 9,
+    "date": "2025-06-01",
+    "name": "Rumus Mengkombinasikan Warna Desain Produk",
+    "src": "assets/img/article/Rumus-mengkombinasikan-warna-desain.png.webp",
+    "desc": "Strategi memperluas jangkauan pasar – Dunia pasar memang sangat sulit di tebak. Apalagi …"
+  },
+  {
+    "id": 10,
+    "date": "2025-06-01",
+    "name": "Cara Memaksimalkan Video Promosi Produk",
+    "src": "assets/img/article/Cara-Memaksimalkan-Video-Promosi.png",
+    "desc": "Cara memaksimalkan video promosi – Unik memang kalau sudah membicarakan soal cara, tips, …"
+  },
+  {
+    "id": 11,
+    "date": "2025-06-01",
+    "name": "Rumus Menentukan Harga Jual Produk Handmade",
+    "src": "assets/img/article/Rumus-Menentukan-Harga-Jual-Produk.png",
+    "desc": "Rumus menentukan harga jual produk – Kamu memiliki produk handmade? Tapi masih bingung …"
+  },
+  {
+    "id": 12,
+    "date": "2025-06-01",
+    "name": "Tips Membuat Script Video Komersial Yang Sederhana",
+    "src": "assets/img/article/Tips-membuat-script-video-komersial.png",
+    "desc": "Tips membuat script video komersial – Pada waktu Sekolah Dasar dulu, coba ingat …"
+  },
+  {
+    "id": 11,
+    "date": "2025-06-01",
+    "name": "Warna Foto Background Netral Untuk Jualan",
+    "src": "assets/img/article/Warna-foto-background-netral.png",
+    "desc": "Warna foto background netral – Dengan memiliki wajah tampan dan cantik, semua orang …"
+  },
+  {
+    "id": 12,
+    "date": "2025-06-01",
+    "name": "Bahan Kemasan Tahan Suhu Tinggi Untuk Makanan Dan Minuman",
+    "src": "assets/img/article/Bahan-kemasan-tahan-suhu-tinggi.png",
+    "desc": "Bahan kemasan tahan suhu tinggi – Memiliki produk makanan dan minuman yang disajikan …"
+  },
+  {
+    "id": 13,
+    "date": "2025-06-01",
+    "name": "Contoh Landing Page Jualan Paling Kece",
+    "src": "assets/img/article/Contoh-landing-page-jualan.png",
+    "desc": "Contoh landing page jualan – Tidak ada salahnya mencontoh atau mengikuti karir perusahaan …"
+  },
+  {
+    "id": 14,
+    "date": "2025-06-01",
+    "name": "Strategi Marketing Properti Secara Online, Anti Rumit !",
+    "src": "assets/img/article/Strategi-marketing-properti-secara-online.png",
+    "desc": "Strategi marketing properti secara online – Usaha properti saat ini udah banyak buanget …"
+  },
+  {
+    "id": 15,
+    "date": "2025-06-01",
+    "name": "Jenis Desain Website 2024 Yang Lagi Naik Daun",
+    "src": "assets/img/article/Jenis-desain-website-2024.png",
+    "desc": "Jenis desain website 2024 memanglah sangat banyak, unik dan gaya desainnya sesuai dengan …"
+  },
+  {
+    "id": 16,
+    "date": "2025-06-01",
+    "name": "Konversi Landing Page Turun, Ini Pemicunya!",
+    "src": "assets/img/article/Konversi-landing-page-turun.png",
+    "desc": "Konversi landing page turun – Apa tindakan yang pernah kamu lakukan ketika konversi …"
+  },
+  {
+    "id": 17,
+    "date": "2025-06-01",
+    "name": "Tren Landing Page Fashion Yang Dapat Menyihir Mata",
+    "src": "assets/img/article/Tren-landing-page-fashion.png",
+    "desc": "Tren landing page fashion – Penampilan memang selalu menjadi poin penting, seperti cara …"
+  },
+  {
+    "id": 18,
+    "date": "2025-06-01",
+    "name": "Tips Jitu Beriklan Di Instagram Yang Efektif",
+    "src": "assets/img/article/Tips-jitu-beriklan-di-Instagram.png",
+    "desc": "Tips jitu beriklan di Instagram – Halo para pejuang Instagram ads, apakah hari …"
   }
 ]
